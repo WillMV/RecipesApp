@@ -1,0 +1,118 @@
+body {
+  background: white;
+  height: 422px;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 360px;
+}
+
+.logo-recipes {
+  background-image: url('../images/imagens/logo-recipes.png');
+  height: 148.5px;
+  left: 107.71px;
+  position: absolute;
+  top: 87.92px;
+  width: 120px;
+  z-index: 1;
+}
+
+.image-tomato {
+  background-image: url('../images/imagens/tomato.png');
+  background-position: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  filter: drop-shadow(0 7px 15px rgba(68, 73, 85, 0.25));
+  height: 100%;
+  position: absolute;
+  top: 180px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  width: 426px;
+  z-index: 1;
+
+}
+
+.purple-login {
+  background: #41197f;
+  height: 422px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 360px;
+}
+
+.title {
+  color: #41197f;
+  font-family: Arial , Helvetica , sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  height: 21px;
+  left: 89px;
+  letter-spacing: 0.165em;
+  line-height: 20px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 524px;
+  width: 182px;
+}
+
+.input-email {
+  border: 0.5px solid #41197f;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 40px;
+  left: 42px;
+  position: absolute;
+  top: 564px;
+  width: 276px;
+}
+
+::placeholder {
+  color: #41197f;
+  font-family: Arial , Helvetica , sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  height: 14px;
+  left: 65px;
+  line-height: 14px;
+  position: center;
+  right: 100px;
+  text-align: center;
+  top: 627px;
+  width: 65px;
+}
+
+.input-password {
+  border: 0.5px solid #41197f;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 40px;
+  left: 42px;
+  position: absolute;
+  top: 613px;
+  width: 276px;
+}
+
+.enter-button {
+  background: #fcc436;
+  border-color: #fcc436;
+  border-radius: 5px;
+  color: white;
+  font-family: Arial , Helvetica , sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  height: 40px;
+  left: 42px;
+  letter-spacing: 0.03em;
+  line-height: 14px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 662px;
+  width: 276px;
+}

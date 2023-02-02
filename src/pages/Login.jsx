@@ -38,7 +38,6 @@ class Login extends React.Component {
     const { history } = this.props;
     const { email } = this.state;
     const user = { email };
-    // localStorage.setItem('user', JSON.stringify(user));
     localStorage.user = JSON.stringify(user);
     history.push('/meals');
   };
@@ -47,25 +46,41 @@ class Login extends React.Component {
     const { email, password, isButtonDisabled } = this.state;
     return (
       <section>
+        <div className="logo-recipes" />
+        <div className="image-tomato" />
+        <div className="purple-login">
+          <h1
+            data-testid="page-title"
+            className="title"
+          >
+            Login
+
+          </h1>
+        </div>
         <div>
           <input
+            className="input-email"
             data-testid="email-input"
             type="email"
             value={ email }
             name="email"
+            placeholder="Email"
             onChange={ this.handleChange }
           />
 
           <input
+            className="input-password"
             data-testid="password-input"
             type="password"
             value={ password }
             name="password"
+            placeholder="Password"
             onChange={ this.handleChange }
           />
         </div>
 
         <button
+          className="enter-button"
           type="button"
           data-testid="login-submit-btn"
           disabled={ isButtonDisabled }
@@ -73,7 +88,6 @@ class Login extends React.Component {
         >
           Enter
         </button>
-
       </section>
     );
   }
