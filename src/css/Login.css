@@ -1,6 +1,6 @@
 body {
   background: white;
-  height: 422px;
+  height: 640px;
   left: 0;
   position: relative;
   top: 0;
@@ -8,10 +8,6 @@ body {
   width: 360px;
 }
 
-button:enabled {
-  background: #fcc436;
-  border-color: #fcc436;
-}
 
 button:disabled {
   background: #aaa8a5;
@@ -45,11 +41,16 @@ button:disabled {
 
 .purple-login {
   background: #41197f;
-  height: 422px;
+  height: 360px;
   left: 0;
   position: absolute;
   top: 0;
   width: 360px;
+}
+
+.login-content {
+  top: ;
+  z-index: 2;
 }
 
 .title {
@@ -104,6 +105,8 @@ button:disabled {
 }
 
 .enter-button {
+  background: #fcc436;
+  border-color: #fcc436;
   border-radius: 5px;
   color: white;
   font-family: Arial , Helvetica , sans-serif;
@@ -118,6 +121,6 @@ button:disabled {
   text-align: center;
   text-transform: uppercase;
   top: 662px;
-  transition: 1.5s all;
+  /* transition: 1.5s all; */
   width: 276px;
 }

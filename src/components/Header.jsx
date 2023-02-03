@@ -1,3 +1,6 @@
+/* eslint-disable react/jsx-max-depth */
+/* eslint-disable react/self-closing-comp */
+/* eslint-disable react/jsx-indent */
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { connect } from 'react-redux';
@@ -18,30 +21,32 @@ function Header({ titlePage }) {
   const verification = titleNoSearch.some((title) => title === titlePage);
   return (
     <div>
-      <nav className="navbar bg-body-tertiary">
+      <nav className="navbar bg-warning">
         <div className="container">
 
           <img alt="appLogoImg" src={ appLogo } />
-          <img alt="RecipesApp" src={ recipesApp } />
+          <img id="recipesApp" alt="RecipesApp" src={ recipesApp } />
 
-          <Link className="navbar-brand" to="/profile">
+          <div>
+            <Link className="navbar-brand" to="/profile">
+            </Link>
             <img
               src={ ProfileIcon }
               alt="icon-profile"
               data-testid="profile-top-btn"
             />
-          </Link>
 
-          <Button
-            type="button"
-            onClick={ () => { setSearch(!search); } }
-          >
-            <img
-              src={ SearchIcon }
-              alt="icon-search"
-              data-testid="search-top-btn"
-            />
-          </Button>
+            <Button
+              type="button"
+              onClick={ () => { setSearch(!search); } }
+            >
+              <img
+                src={ SearchIcon }
+                alt="icon-search"
+                data-testid="search-top-btn"
+              />
+            </Button>
+          </div>
         </div>
       </nav>
 

@@ -58,7 +58,7 @@ class Login extends React.Component {
 
           </h1>
         </div>
-        <div>
+        <div className="login-content">
           <input
             className="input-email"
             data-testid="email-input"
@@ -78,17 +78,18 @@ class Login extends React.Component {
             placeholder="Password"
             onChange={ this.handleChange }
           />
+
+          <button
+            className="enter-button"
+            type="button"
+            data-testid="login-submit-btn"
+            disabled={ isButtonDisabled }
+            onClick={ this.handleClick }
+          >
+            Enter
+          </button>
         </div>
 
-        <button
-          className="enter-button"
-          type="button"
-          data-testid="login-submit-btn"
-          disabled={ isButtonDisabled }
-          onClick={ this.handleClick }
-        >
-          Enter
-        </button>
       </section>
     );
   }
