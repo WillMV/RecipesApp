@@ -14,8 +14,8 @@ button:enabled {
 }
 
 button:disabled {
-  background: #fc9636;
-  border-color: #f38e60;
+  background: #aaa8a5;
+  border-color: #696665;
 }
 
 .logo-recipes {
@@ -75,6 +75,7 @@ button:disabled {
   box-sizing: border-box;
   height: 40px;
   left: 42px;
+  padding-left: 15px;
   position: absolute;
   top: 564px;
   width: 276px;
@@ -86,7 +87,7 @@ button:disabled {
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  padding-left: 15px;
+  /* padding-left: 15px; */
   text-align: left;
 }
 
@@ -96,6 +97,7 @@ button:disabled {
   box-sizing: border-box;
   height: 40px;
   left: 42px;
+  padding-left: 15px;
   position: absolute;
   top: 613px;
   width: 276px;

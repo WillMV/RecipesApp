@@ -3,12 +3,10 @@ import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import SearchIcon from '../images/searchIcon.svg';
 import useFetch from '../hooks/useFetch';
 import { getRevenues } from '../redux/actions';
 
-function SearchBar({ titlePage, dispatch }) {
-  const [search, setSearch] = useState(false);
+function SearchBar({ titlePage, dispatch, search }) {
   const [valueInput, setValueInput] = useState('');
   const [option, setOption] = useState('');
   const [returnAPI, setReturnAPI] = useState();
@@ -64,16 +62,6 @@ function SearchBar({ titlePage, dispatch }) {
   return (
     <div>
       {redirect && toRedirect()}
-      <button
-        type="button"
-        onClick={ () => { setSearch(!search); } }
-      >
-        <img
-          src={ SearchIcon }
-          alt="icon-search"
-          data-testid="search-top-btn"
-        />
-      </button>
       {
         search && (
           <div>
@@ -128,8 +116,9 @@ function SearchBar({ titlePage, dispatch }) {
 }
 
 SearchBar.propTypes = {
-  titlePage: PropTypes.string.isRequired,
   dispatch: PropTypes.func.isRequired,
+  search: PropTypes.bool.isRequired,
+  titlePage: PropTypes.string.isRequired,
 };
 
 const mapStateToProps = (state) => ({
