@@ -59,7 +59,7 @@ class Login extends React.Component {
         </div>
         <div>
           <input
-            className="input-email"
+            className="input-email input-group mb-3"
             data-testid="email-input"
             type="email"
             value={ email }
@@ -69,7 +69,7 @@ class Login extends React.Component {
           />
 
           <input
-            className="input-password"
+            className="input-password input-group mb-3"
             data-testid="password-input"
             type="password"
             value={ password }
@@ -80,7 +80,7 @@ class Login extends React.Component {
         </div>
 
         <button
-          className="enter-button"
+          className="enter-button btn btn-warning"
           type="button"
           data-testid="login-submit-btn"
           disabled={ isButtonDisabled }

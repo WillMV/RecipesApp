@@ -9,11 +9,11 @@ body {
 
 .logo-recipes {
   background-image: url('../images/imagens/logo-recipes.png');
-  height: 148.5px;
-  left: 107.71px;
+  height: 159.5px;
+  left: 74.71px;
   position: absolute;
   top: 87.92px;
-  width: 120px;
+  width: 212px;
   z-index: 1;
 }
 
@@ -68,6 +68,8 @@ body {
   position: absolute;
   top: 564px;
   width: 276px;
+  z-index: 2;
+  padding: 0 12px;
 }
 
 ::placeholder {
@@ -95,6 +97,7 @@ body {
   position: absolute;
   top: 613px;
   width: 276px;
+  padding: 0 15px;
 }
 
 .enter-button {
