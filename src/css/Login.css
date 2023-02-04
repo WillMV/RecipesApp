@@ -80,7 +80,22 @@ button:disabled {
   position: absolute;
   top: 564px;
   width: 276px;
+  z-index: 2;
+  padding: 0 12px;
 }
+
+.input-password {
+  border: 0.5px solid #41197f;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 40px;
+  left: 42px;
+  position: absolute;
+  top: 613px;
+  width: 276px;
+  padding: 0 15px;
+}
+
 
 ::placeholder {
   color: #41197f;
